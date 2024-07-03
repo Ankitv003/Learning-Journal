@@ -7,21 +7,38 @@ html,
 body {
   margin: 0;
   padding: 0;
+  color: black;
+  font-family: "Roboto", sans-serif;
 }
 
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  font-weight: 700;
 }
 .logo {
   display: flex;
   align-items: center;
+  white-space: nowrap;
+}
+.logo p {
+  margin-left: 0.25em;
+}
+.nav-list {
+  display: flex;
 }
 .nav-lists {
   list-style: none;
+  margin-left: 1em;
+  font-weight: 500;
 }
 .nav-links {
   display: flex;
   text-decoration: none;
+  color: black;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
 }
