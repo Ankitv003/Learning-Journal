@@ -12,33 +12,132 @@ body {
 }
 
 .header {
+  margin-top: 0.5em;
+  font-weight: 700;
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-evenly;
-  font-weight: 700;
 }
 .logo {
   display: flex;
   align-items: center;
   white-space: nowrap;
+  margin-right: 1em;
 }
 .logo p {
   margin-left: 0.25em;
 }
 .nav-list {
+  margin: 0;
+  padding: 0;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1em;
 }
 .nav-lists {
   list-style: none;
-  margin-left: 1em;
+  /* margin-left: 1em; */
   font-weight: 500;
+  margin-bottom: 1em;
+  border-bottom: 1px dotted black;
 }
 .nav-links {
-  display: flex;
+  /* display: flex; */
   text-decoration: none;
   color: black;
 }
 .container {
   width: 90%;
   margin: 0 auto;
+}
+.nav {
+  visibility: hidden;
+  height: 0;
+  position: absolute;
+}
+
+.nav-visible {
+  visibility: visible;
+  height: auto;
+  position: relative;
+}
+.nav-toggle {
+  cursor: pointer;
+  border: 0;
+  width: 3em;
+  height: 3em;
+  padding: 0em;
+  border-radius: 50%;
+  background: black;
+  color: white;
+  transition: opacity 250ms ease;
+  position: absolute;
+  right: 16px;
+}
+/* ---------------------------main-------------- */
+.main {
+  background-image: url(/images/article-image-hero.png);
+  min-height: 375px;
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: end;
+  color: white;
+  font-weight: 400;
+  padding: 1em;
+}
+.main a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: yellowgreen;
+}
+
+section {
+  padding-top: 1em;
+  padding-bottom: 2em;
+  display: none;
+}
+section p {
+  margin: 0.5em;
+}
+section h1 {
+  margin: 0.3em;
+}
+section img {
+  width: 100%;
+}
+#loadMore {
+  cursor: pointer;
+  color: black;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 1em;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 1em;
+}
+footer {
+  background-color: #202020;
+  color: white;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  margin: 0.25em;
 }

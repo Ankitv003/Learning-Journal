@@ -15,21 +15,74 @@
   <body>
     <div class="container">
       <header class="header">
-        <div class="logo">
-          <img src="images/header-img.png" alt="logo" />
-          <p>My Learning Journal</p>
+        <div class="row">
+          <div class="logo">
+            <img src="images/header-img.png" alt="logo" />
+            <p>My Learning Journal</p>
+          </div>
+          <button class="nav-toggle" aria-label="open-navigation">
+            <i class="fa-solid fa-bars hamburger"></i>
+          </button>
+        </header>
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-lists">
+                <a href="/index.html" class="nav-links">Home</a>
+              </li>
+              <li class="nav-lists">
+                <a href="/about.html" class="nav-links">About</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-lists">
-              <a href="/Home" class="nav-links">Home</a>
-            </li>
-            <li class="nav-lists">
-              <a href="/About" class="nav-links">About</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
     </div>
+    <main class="main">
+      <div>
+        <p>July 4,2024 </p>
+        <a href="/main-article.html">
+        <h1>My new journey as a bootcamp student.</h1>
+        <p>After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.</p>
+      </a>
+      </div>
+
+    </main>
+    <section class="section blog-one">
+      <div class="container">
+        <img src="/images/article-image-03.png" alt=" a latop with some code written on it">
+        <p>July 4,2024 </p>
+        <h1>Blog one</h1>
+        <p>After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.</p>
+      </div>
+    </section>
+    <section class="section blog-two">
+      <div class="container">
+        <img src="/images/article-image-02.png" alt=" a person holding a light bulb">
+        <p>July 4,2024 </p>
+        <h1>Blog two</h1>
+        <p>After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.</p>
+      </div>
+    </section>
+    <section class="section blog-three">
+      <div class="container">
+        <img src="/images/article-image-01.png" alt=" a latop with some quote written on it">
+        <p>July 4,2024 </p>
+        <h1>Blog three</h1>
+        <p>After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.</p>
+      </div>
+    </section>
+    <section class="section blog-four"></section>
+    <section class="section blog-five"></section>
+    <section class="section blog-six"></section>
+    <div id="loadMore">View 3 more</div>
+
+    <script
+      src="https://kit.fontawesome.com/e0b0f7ea4e.js"
+      crossorigin="anonymous"
+    ></script>
+    <footer class="footer">
+      <p>My Learning Journal</p>
+      <p>Copyright ©2024</p>
+    </footer>
+    <script src="./index.js" type="module"></script>
   </body>
 </html>
