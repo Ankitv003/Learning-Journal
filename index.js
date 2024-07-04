@@ -4,7 +4,6 @@ const nav = document.querySelector(".nav");
 hamburgerMenu.addEventListener("click", function () {
   nav.classList.toggle("nav-visible");
 });
-// Add this to your existing index.js file
 
 document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll(".section");
