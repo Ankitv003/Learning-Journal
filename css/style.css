@@ -167,3 +167,64 @@ footer p {
   font-weight: 400;
   color: #d7d7d7;
 }
+
+@media (min-width: 750px) {
+  .nav {
+    visibility: visible;
+    display: flex;
+    height: auto;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+  }
+
+  .nav-visible {
+    visibility: hidden;
+    height: auto;
+    position: relative;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .exp {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-list {
+    flex-direction: row;
+  }
+  .nav-lists {
+    margin-left: 5em;
+    margin-top: 0.5em;
+  }
+  .container {
+    align-items: center;
+  }
+  .main {
+    background-image: url(/images/blog-image-hero.png);
+    min-height: 500px;
+    max-width: 100%;
+    /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+    color: white;
+    font-weight: 400;
+    padding: 1em; */
+  }
+  .header-article {
+    width: 50%;
+  }
+  .header-article p {
+    width: 90%;
+  }
+  .flex-container {
+    margin: 2em 2em;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section {
+    flex: 1 1 33%;
+  }
+}
