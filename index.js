@@ -5,9 +5,9 @@ hamburgerMenu.addEventListener("click", function () {
   nav.classList.toggle("nav-visible");
 });
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
   const sections = document.querySelectorAll(".section");
-  const loadMoreButton = document.getElementById("loadMore");
+  const loadMoreButton = document.getElementById("load-more");
   let visibleSections = 3;
 
   const showSections = () => {
@@ -23,12 +23,10 @@ document.addEventListener("DOMContentLoaded", () => {
       loadMoreButton.style.display = "none";
     }
   };
-
-  loadMoreButton.addEventListener("click", () => {
+  loadMoreButton.addEventListener("click", function () {
     visibleSections += 3;
     showSections();
   });
-
   // Initial call to show sections
   showSections();
 });

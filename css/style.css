@@ -99,12 +99,19 @@ body {
 }
 .main a {
   color: white;
-  text-decoration: none;
+  /* text-decoration: none; */
 }
-a:hover {
+.main a:hover {
   color: yellowgreen;
 }
+.main-article img {
+  width: 100%;
+}
 
+#my-photo {
+  width: 45%;
+  border-radius: 100%;
+}
 section {
   padding-top: 1em;
   padding-bottom: 2em;
@@ -119,7 +126,7 @@ section h1 {
 section img {
   width: 100%;
 }
-#loadMore {
+#load-more {
   cursor: pointer;
   color: black;
   text-decoration: underline;
@@ -129,6 +136,11 @@ section img {
   font-size: 1.1rem;
   margin-bottom: 1em;
 }
+
+.recent-posts {
+  text-align: center;
+}
+
 footer {
   background-color: #202020;
   color: white;
@@ -137,7 +149,13 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-weight: 700;
+  font-family: "Source Sans 3", sans-serif;
 }
 footer p {
   margin: 0.25em;
+}
+
+.copyright {
+  font-weight: 400;
 }
