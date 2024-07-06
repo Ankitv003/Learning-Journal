@@ -209,6 +209,7 @@ footer p {
   .nav-lists {
     margin-left: 5em;
     margin-top: 0.5em;
+    border-bottom: none;
   }
   .container {
     align-items: center;
